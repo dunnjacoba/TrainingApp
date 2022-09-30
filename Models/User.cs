@@ -11,7 +11,8 @@ namespace TrainingApp.Models
         [MaxLength(50)]
         public string LastName { get; set; } = null!;
 
-        public string DisplayName { get; } = null!;
-     
+        public string DisplayName => $"{LastName}, {FirstName}";
+
+
     }
 }
