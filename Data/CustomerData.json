@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Keane",
+    "lastName": "Laurissa",
+    "location": "Kansas City",
+    "customerid": 1000
+  },
+  {
+    "firstName": "Dione",
+    "lastName": "Sonny",
+    "location": "New York",
+    "customerId": 1001
+  },
+  {
+    "firstName": "Shaw",
+    "lastName": "Shelton",
+    "location": "Chicago",
+    "customerId": 1002
+  },
+  {
+    "firstName": "Henrietta",
+    "lastName": "Kalie",
+    "location": "Chicago",
+    "customerId": 1003
+  }
+]

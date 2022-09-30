@@ -12,10 +12,11 @@ namespace TrainingApp.Controllers
         public EmployeeService EmployeeService;
         public IEnumerable<Employee> Employees { get; private set; }
 
-        public EmployeeController(ILogger<EmployeeController> logger, EmployeeService employeeService)
+        public EmployeeController(ILogger<EmployeeController> logger, EmployeeService employeeService, IEnumerable<Employee> employees)
         {
             _logger = logger;
             EmployeeService = employeeService;
+            Employees = employees; 
             
         }
         [HttpGet]

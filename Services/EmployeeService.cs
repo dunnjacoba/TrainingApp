@@ -27,7 +27,8 @@ namespace TrainingApp.Services
                         PropertyNameCaseInsensitive = true,
                     });
             }
-
         }
+
+
     }
 }

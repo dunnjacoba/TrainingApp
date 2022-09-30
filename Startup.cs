@@ -17,6 +17,7 @@ public class Startup
 		services.AddControllers();
 		services.AddSwaggerGen();
 		services.AddTransient<EmployeeService>();
+		services.AddTransient<CustomerService>();
 	}
 
 	public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
