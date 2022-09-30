@@ -5,7 +5,7 @@ using TrainingApp.Services;
 namespace TrainingApp.Controllers
 {
     [ApiController]
-    [Route("employee")]
+    [Route("[controller]")]
     public class EmployeeController : ControllerBase
     {
        private readonly ILogger<EmployeeController> _logger;
@@ -22,7 +22,12 @@ namespace TrainingApp.Controllers
         [HttpGet]
         public IEnumerable<Employee> Get()
         {
-            return Employees = EmployeeService.GetEmployees();
+            return EmployeeService.GetEmployees();
+        }
+        [HttpPut("{id:int}")]
+        public void Update(int id)
+        {            
+                EmployeeService.UpdateEmployee(id);                       
         }
     }
 }

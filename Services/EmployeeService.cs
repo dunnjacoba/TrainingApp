@@ -29,6 +29,17 @@ namespace TrainingApp.Services
             }
         }
 
+        public void UpdateEmployee(int employeeId)
+        {
+            var employees = GetEmployees();
+
+            var query = employees.Where(x => x.EmployeeId == employeeId);
+
+            if(query.Count() > 0)
+            {
+                var employee = query.ToString();
+            }
+        }
 
     }
 }

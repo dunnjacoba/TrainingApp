@@ -5,7 +5,7 @@ using TrainingApp.Services;
 namespace TrainingApp.Controllers
 {
     [ApiController]
-    [Route("customer")]
+    [Route("[controller]")]
     public class CustomerController : ControllerBase
     {
         private readonly ILogger<CustomerController> _logger;
@@ -22,7 +22,7 @@ namespace TrainingApp.Controllers
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
-            return Customers = CustomerService.GetCustomers();
+            return  CustomerService.GetCustomers();
         }
     }
 }
