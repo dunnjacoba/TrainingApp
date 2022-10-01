@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Runtime.InteropServices;
+using System.Text.Json;
 using TrainingApp.Models;
 
 namespace TrainingApp.Services
@@ -39,6 +40,18 @@ namespace TrainingApp.Services
             {
                 var employee = query.ToString();
             }
+        }
+
+        public Employee Add(Employee employee)
+        {
+            var employees = GetEmployees();
+
+            if (employees!.Contains(employee))
+            {
+                employees.Append(employee);
+               
+            }
+            return employee;
         }
 
     }
